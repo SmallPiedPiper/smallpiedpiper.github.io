@@ -97,3 +97,5 @@ friends: [
     title: "朋友的博客",
         href: "https://smallpiedpiper.github.io/"
 ]
+
+theme: jekyll-theme-slate
