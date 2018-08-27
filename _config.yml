@@ -1,5 +1,5 @@
 # Site settings
-title: zyd-blog
+title: Traveling Light
 SEOTitle: 严冬的博客 
 header-img: img/home-bg.jpg
 email: 1610288607@qq.com
@@ -62,7 +62,7 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ ba_track_id: c9f4dca515
 
 # Google Analytics
 
@@ -91,11 +91,11 @@ service-worker: true
 # Friends
 friends: [
    {
-        title: "严冬",
+        title: "本宝宝的GitHub",
         href: "https://smallpiedpiper.github.io/"
     },
-    title: "朋友的博客",
-        href: "https://smallpiedpiper.github.io/"
+    title: "友情链接",
+        href: "https://baike.baidu.com/item/%E5%A4%A9%E7%BA%BF%E5%AE%9D%E5%AE%9D/3232396?fr=aladdin"
 ]
 
 theme: jekyll-theme-slate
