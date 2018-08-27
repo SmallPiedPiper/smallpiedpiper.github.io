@@ -1,7 +1,7 @@
-> 自我成长  
-> 离开世界之前，一切都是过程。
+> 自信 勇敢 自律 坚持  
+> He must be a person who is positive and brave enough to make short term sacrifice for long term success,The futures has arrived,It commences now.
 
-hello，赵严冬，一切还在路上，你会看到更好的我。 
+Hello，我是赵严冬，一切还在路上，我会努力，你会看到更好的我。 
 
 
 ##### Talks
