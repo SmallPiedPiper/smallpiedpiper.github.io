@@ -6,7 +6,7 @@ email: 1610288607@qq.com
 description: "He must be a person who is positive and brave enough to make short term sacrifice for long term success,The futures has arrived,It commences now."
 keyword: "严冬, 后端, 互联网, 产品, 严冬的博客, yd Blog, 博客, 个人网站, 互联网, Web,"
 url: ""              # your host, for absolute URL
-baseurl: "https://github.com/SmallPiedPiper/smallpiedpiper.github.io.git"                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
