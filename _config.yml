@@ -1,172 +1,128 @@
-title: Open the word
-name: 严冬
-email: 1610288607@qq.com
-description: He must be a person who is positive and brave enough to make short term sacrifice for long term success,The futures has arrived,It commences now.
+# Site settings
+title: Hux Blog
+SEOTitle: 黄玄的博客 | Hux Blog
+header-img: img/home-bg.jpg
+email: huxpro@gmail.com
+description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
+keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
+url: "https://huangxuan.me"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: false
+weibo_username:     huxpro
+zhihu_username:     huxpro
+github_username:    huxpro
+twitter_username:   huxpro
+#facebook_username:  huxpro
+#linkedin_username:  firstname-lastname-idxxxx
 
 
-baseurl: "/blog"
-url: ""
-
-display_footer: inital  #change this to 'none' if you want to hide the footer copyright text
-
-parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
-parallax_image_two: assets/images/startup3.jpg
-
-project_one: 微商管理系统（SSM+Shiro+Bootstrap+Mysql）
-project_one_description: 该系统采用的是基于B/S架构提供给目前大量存在的微商群体,根据微商群体的真实需求编写而编写的，功能分为不同代理之间的权限登陆功能模块，商品信息展示模块，商品的添加和录入，以及库存显示模块，微商代理之间关系的维护模块，商品周期图表分析模块；
-project_one_url: https://github.com/SmallPiedPiper/weishang-Management-System.git
-project_one_icon: location_on
-
-project_two: 智慧医疗APP后台开发（JavaWeb+Mysql+ubuntu）
-project_two_description: 本项目通过智能硬件，实时监测用户的心率、心跳、体温、呼吸等各项基本生命体征，并可以通过手机APP查看数据，以及数据上传云服务器，建立个人身体信息健康档案，同时还提供身体预警和危险状况通知子女。实现患者与患者间、患者与医生间、医生与医生间等等进行交流沟通病况或学术等功能。
-project_two_url: https://github.com/SmallPiedPiper/-Smart-medical-App-backstage.github.io.git
-project_two_icon: photo_camera
-
-
-project_three: CRM客户管理系统（SSM+Bootstrap+Mysql）
-project_three_description: 该系统采用 MyEclipse +Mysql+腾讯云服务器的技术架构，使用前台 bootstrap 框架，后台采用的是 Spring，SpringMVC 和 Mybatis 的架构设计，满足客户登录、查询和信息检索的需求。
-project_three_url: https://github.com/SmallPiedPiper/crm-.github.io.git
-project_three_icon: hotel
-
-
-
-
-portfolio_heading: 项目工程
-portfolio_type: cards
-
-syntax_highlighting: true
-# Skill icons from https://konpa.github.io/devicon/
-
-skills:
-  - name: amazonwebservices
-  - name: android
-  - name: angularjs
-  - name: apache
-  - name: appcelerator
-  - name: apple
-  - name: atom
-  - name: babel
-  - name: backbonejs
-  - name: bitbucket
-  - name: bootstrap
-  - name: bower
-  - name: c
-  - name: chrome
-  - name: codeigniter
-  - name: coffescript
-  - name: confluence
-  - name: cplusplus
-  - name: csharp
-  - name: css3
-  - name: cucumber
-  - name: d3js
-  - name: debian
-  - name: devicon
-  - name: django
-  - name: docker
-  - name: doctrine
-  - name: dot-net
-  - name: drupal
-  - name: erlang
-  - name: facebook
-  - name: firefox
-  - name: foundation
-  - name: gatling
-  - name: gimp
-  - name: git
-  - name: github
-  - name: gitlab
-  - name: go
-  - name: google
-  - name: gradle
-  - name: grunt
-  - name: gulp
-  - name: heroku
-  - name: html5
-  - name: ie10
-  - name: illustrator
-  - name: inkscape
-  - name: itellij
-  - name: java
-  - name: jasmine
-  - name: javascript
-  - name: laravel
-  - name: less
-  - name: linux
-  - name: meteor
-  - name: mocha
-  - name: mongodb
-  - name: moodle
-  - name: mysql
-  - name: nginx
-  - name: nodejs
-  - name: nodewebkit
-  - name: oracle
-  - name: photoshop
-  - name: php
-  - name: phpstorm
-  - name: protractor
-  - name: postgresql
-  - name: python
-  - name: pycharm
-  - name: rails
-  - name: react
-  - name: redhat
-  - name: redis
-  - name: ruby
-  - name: rubymine
-  - name: safari
-  - name: sass
-  - name: sequelize
-  - name: slack
-  - name: sourcetree
-  - name: ssh
-  - name: swift
-  - name: symfony
-  - name: tomcat
-  - name: travis
-  - name: trello
-  - name: twitter
-  - name: typescript
-  - name: ubuntu
-  - name: vim
-  - name: visualstudio
-  - name: vuejs
-  - name: webpack
-  - name: webstorm
-  - name: windows8
-  - name: wordpress
-  - name: yii
-  - name: zend
-
-icon_size: 50 # font-size of icons in px
-colored: colored # Leave blank for black and white icons
-
-project_button: Github
-
-github: https://github.com/SmallPiedPiper
-medium:
-
-baseurl: # if your site is located at /blog or /home, enter it here, otherwise leave it empty
-url: http://localhost:4000/ #the url of your site
-
-# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
-tag_manager_id: # This looks something like GTM-XXXXXXX
-google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
-
-cookies_banner: show # The value "show" will show the cookies banner, the value "none" will hide the banner.
-
-cookie_accept_message: Thanks!
-
-syntax_highlighting: true # include the css for syntax highlighting
 
 # Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-# theme: minima
-permalink: pretty
-plugins:
-  - jekyll-feed
-  - jekyll-assets
-  - jekyll-minifier
+
+
+
+# Disqus settings
+disqus_username: hux
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "For the next quantum leap<br>离开世界之前，一切都是过程"
+sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+    #     title: "Su",
+    #     href: "http://su.gallery/"
+    # },{
+        title: "乱序",
+        href: "http://mida.re/"
+    },{
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
+    },{
+        title: "天镶的博客",
+        href: "http://lingyu.wang/"
+    },{
+        title: "Luke 的自留地",
+        href: "http://hmqk1995.github.io"
+    },{
+        title: "Ebn's Blog",
+        href: "http://ebnbin.com/"
+    },{
+        title: "SmdCn's Blog",
+        href: "http://blog.smdcn.net"
+    },{
+        title: "David's Game",
+        href: "https://www.ruoyaowu.com/"
+    },{
+        title: "DHong Say",
+        href: "http://dhong.co"
+    },{
+        title: "尹峰以为",
+        href: "http://ingf.github.io/"
+    },{
+        title: "解旻的博客",
+        href: "http://xieminis.me/"
+    }
+]
