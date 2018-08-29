@@ -1,0 +1,50 @@
+---
+layout:       post
+title:        "寻找1的个数"
+subtitle:     "寻找1的个数"
+date:         2018-08-29 20:00:00
+author:       "严冬"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - 剑指offer
+    - Java
+    - 刷题
+---
+
+**输入一个整数，输出该数二进制表示中1的个数**
+	
+**解题思路应该充分运用 左移右移**
+  * 其中负数用补码表示。
+  * java中有三种移位运算符
+  * <<      :     左移运算符，num << 1,相当于num乘以2
+  *>>      :     右移运算符，num >> 1,相当于num除以2
+  *>>>    :     无符号右移，忽略符号位，空位都以0补齐正数的原反补一样，负数不同
+
+```
+public class CountOne {
+
+	public static void main(String[] args) {
+		
+		
+	}
+	public int NumberOf1(int n) {
+		
+		
+				int count = 0;
+		        for(int i = 0; i < 32; i++){
+		            if((n >>> i & 1) == 1)
+		                ++count;
+		        }
+		        return count;
+		    }
+
+
+    
+}
+
+
+
+```
+
