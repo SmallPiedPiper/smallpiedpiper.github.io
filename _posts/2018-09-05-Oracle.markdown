@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "oracle安装"
+date:   2018.09.05
+image: /assets/images/twoscreen.jpg
+---
+分类标签：Oracle
+
+**原作者** 
+https://blog.csdn.net/whbing1471/article/details/52087130
+***
+

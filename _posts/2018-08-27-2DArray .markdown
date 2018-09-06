@@ -1,0 +1,97 @@
+---
+layout:       post
+title:        "二维数组遍历规律"
+subtitle:     "二维数组遍历规律"
+date:         2018-09-06 20:00:00
+author:       "严冬"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - 剑指offer
+    - Java
+    - 刷题
+	-二维数组
+---
+
+**输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字**
+	
+**解题思路应该充分运用二维数组由外而内产生的规律**
+  * 1 2 3 4。
+  * 5 6 7 8
+  * 9 10 11 12
+  * 13 14 15 16 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.
+  * 这个最不易考虑到的是循环的时候的条件，记得每一圈遍历的时候看左上角的行和列下标，便你能看出来都是相等的。而且是
+  * 在临界的时候（循环到最后一圈，什么时候是临界条件）总会是小于你的阶数，5<2*2 ,然后其次在考虑你的从左到右，
+  * 从上到下，从右到左，从下倒上，每种的临界情况要考虑到
+  * 最后就成一个圈，然后在进行第二圈的循环，还是从左上角开始，依次注意你的临界条件
+
+```
+/*
+	 * 输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，
+	 * 例如，如果输入如下4 X 4矩阵： 
+	 * 1 2 3 4 
+	 * 5 6 7 8 
+	 * 9 10 11 12 
+	 * 13 14 15 16 
+	 * 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.*/
+	public static ArrayList<Integer> printMatrix(int [][] matrix) {
+		 ArrayList<Integer> list= new ArrayList<Integer>();
+		//完全采用理论分析的模式，分析其中的规律来解决这类问题
+		 
+        int rows =matrix.length;
+		 int cloumn=matrix[0].length;
+		 if(matrix == null || rows <= 0 || cloumn <= 0){
+		    return null;
+	        }
+		 int start=0;
+		 while(cloumn > start*2 && rows > start*2 ){
+			OneCircle(list,matrix,rows,cloumn,start);
+			 ++start;
+		 }
+		 return list;
+	       
+	    }
+		private static void OneCircle(ArrayList<Integer> list,int [][] array,
+                             int rows,int cloumn,int start){
+			//第一次循环圈子的时候，先执行从左到右，从上到下，然后从右到左，在执行从下到上
+			
+			int endx=cloumn-1-start;//横轴需要遍历的元素个数
+			int endy=rows-1-start;//纵轴需要遍历的个数
+			//从左到右
+			//需要循环数据的前提
+           for(int i = start;i <= endx; ++i){
+               int number=array[start][i];
+               list.add(number);
+           }	
+			//从上到下
+			if(start < endy)
+			{
+				for(int i= start + 1;i <= endy;++i)
+				{
+					int number=array[i][endx];
+					list.add(number);
+				}
+			}
+			//从右到左
+			if(start < endx && start < endy )
+			{
+				for(int i =endx - 1;i >= start;--i){
+					int number=array[endy][i];
+					list.add(number);
+				}
+			}
+			//从下到上
+			if(start < endx && start< endy - 1 ){
+				for(int i= endy - 1;i >= start + 1;--i)
+				{
+					int number=array[i][start];
+					list.add(number);
+				}
+				
+			}
+		
+		}
+
+```
+
